@@ -8,10 +8,6 @@ class Player(ABC):
         return self.symbol
 
     @abstractmethod
-    def makeMove(self, board):
-        pass    # To be implemented by subclasses
-
-    @abstractmethod
     def update(self, board):
         pass    # To be implemented by subclasses
 
@@ -19,9 +15,7 @@ class Player(ABC):
 class HumanPlayer(Player):
     def __init__(self, symbol):
         super().__init__(symbol)
-    
-    def makeMove(self, board):
-        pass    # Implementation for making a move
+    # Implementation for making a move
 
     def update(self, board):
         pass    # Implementation to update player with board state
